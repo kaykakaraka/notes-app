@@ -1,11 +1,20 @@
 class NotesModel {
 
   getNotes() {
-    return this.add ? ['Buy milk'] : [];
+    if (this.note) {
+      let notes = [this.note];
+      return notes 
+    } else {
+      return [];
+    }
   }
 
-  addNote(){
-    this.add = true
+  addNote(note){
+    if (note === 'Buy milk') {
+      this.note = 'Buy milk';
+    } else {
+      this.note = 'Go to the gym';
+    }
   }
 
   reset() {
