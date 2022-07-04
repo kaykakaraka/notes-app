@@ -1,19 +1,14 @@
 class NotesModel {
   constructor() {
-    this.count = 0
+    this.notes = []
   }
 
   getNotes() {
-    if (this.count === 2) {
-      return ['Buy milk', 'Go to the gym'];
-    } else {
-      return this.note ? [this.note] : []
-    }
+    return this.notes;
   }
 
   addNote(note){
-    this.note = note;  
-    this.count += 1;
+    this.notes.push(note);
   }
 
   reset() {
