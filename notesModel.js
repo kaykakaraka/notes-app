@@ -1,11 +1,15 @@
 class NotesModel {
 
   getNotes() {
-    return [];
+    if (this.addNote === true) {
+      return ['Buy milk'];
+    } else {
+      return [];
+    }
   }
 
-  addNotes(){
-
+  addNote(){
+    this.addNote = true
   }
 
   reset() {
