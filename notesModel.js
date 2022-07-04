@@ -1,11 +1,7 @@
 class NotesModel {
 
   getNotes() {
-    if (this.note) {
-      return [this.note];
-    } else {
-      return [];
-    }
+    return this.note ? [this.note] : []
   }
 
   addNote(note){
