@@ -5,11 +5,7 @@ class NotesModel {
   }
 
   addNote(note){
-    if (note === 'Buy milk') {
-      this.note = 'Buy milk';
-    } else {
-      this.note = 'Go to the gym';
-    }
+    this.note = note;
   }
 
   reset() {
