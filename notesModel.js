@@ -2,8 +2,7 @@ class NotesModel {
 
   getNotes() {
     if (this.note) {
-      let notes = [this.note];
-      return notes 
+      return [this.note];
     } else {
       return [];
     }
