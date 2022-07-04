@@ -17,6 +17,13 @@ describe('NotesModel',() => {
     model.addNote('Go to the gym');
     expect(model.getNotes()).toEqual(['Go to the gym']);
   })
+
+  it('adds multiple notes and returns them in an array',() => {
+    const model = new NotesModel();
+    model.addNote('Buy milk');
+    model.addNote('Go to the gym');
+    expect(model.getNotes()).toEqual(['Buy milk', 'Go to the gym']);
+  })
 })
 
 // const model = new NotesModel();
