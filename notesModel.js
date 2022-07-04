@@ -1,7 +1,7 @@
 class NotesModel {
 
   getNotes() {
-    if (this.addNote === true) {
+    if (this.add) {
       return ['Buy milk'];
     } else {
       return [];
@@ -9,7 +9,7 @@ class NotesModel {
   }
 
   addNote(){
-    this.addNote = true
+    this.add = true
   }
 
   reset() {
