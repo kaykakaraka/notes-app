@@ -31,6 +31,14 @@ describe('NotesModel',() => {
     model.reset();
     expect(model.getNotes()).toEqual([]);
   })
+
+  it('returns an empty array once you have reset it',() => {
+    const model = new NotesModel();
+    model.addNote('Buy milk');
+    model.reset();
+    model.addNote('Buy milk');
+    expect(model.getNotes()).toEqual(['Buy milk']);
+  })
 })
 
 // const model = new NotesModel();

@@ -4,11 +4,7 @@ class NotesModel {
   }
 
   getNotes() {
-    if (this.reset === true) {
-      return []
-    } else {
-      return this.notes;
-    }
+    return this.notes;
   }
 
   addNote(note){
@@ -16,7 +12,7 @@ class NotesModel {
   }
 
   reset() {
-    this.reset = true;
+    this.notes = [];
   }
 }
 
