@@ -1,11 +1,7 @@
 class NotesModel {
 
   getNotes() {
-    if (this.add) {
-      return ['Buy milk'];
-    } else {
-      return [];
-    }
+    return this.add ? ['Buy milk'] : [];
   }
 
   addNote(){
