@@ -1,12 +1,17 @@
 class NotesView {
-  constructor() {
+  constructor(model) {
     this.mainContainerEl = document.querySelector('#main-container');
+    this.model = model
   }
 
   displayNotes() {
-    let div = document.createElement("div");
-    div.className = "note";
-    this.mainContainerEl.append(div);
+    const notes = this.model.getNotes();
+    notes.forEach((note) => {
+      let div = document.createElement("div");
+      div.className = "note"
+      div.innerText = note
+      this.mainContainerEl.append(div)
+    })
   }
 }
 
