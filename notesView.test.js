@@ -36,11 +36,3 @@ describe("NotesView", () => {
     expect(document.querySelector("div.note").innerText).toEqual('Wash your dog');
   })
 });
-
-// You'll need to:
-
-// Add a new text input and button to the web page.
-// Test-drive and implement the JS code that allows the user to input a new note title, click the button, and see the new note displayed on the page.
-// you should set an event listener in the NotesView constructor.
-// the model's addNote method should be called to save the new note on the model.
-// you should use the displayNotes method to reflect these changes on the page.
