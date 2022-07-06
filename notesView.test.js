@@ -33,6 +33,7 @@ describe("NotesView", () => {
     inputField.value = 'Wash your dog';
     addButton.click();
     expect(document.querySelectorAll("div.note").length).toBe(1);
+    expect(document.querySelector("div.note").innerText).toEqual('Wash your dog');
   })
 });
 
